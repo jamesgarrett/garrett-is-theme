@@ -1,0 +1,9 @@
+%current {
+	a{
+		text-decoration:underline !important;
+	}
+}
+
+[class*="current"] {
+	@extend %current;
+}

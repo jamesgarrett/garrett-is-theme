@@ -1,0 +1,35 @@
+header#top {
+	height:10vh;
+	z-index:9;
+	display: table;
+	margin: 0;
+	width:100%;
+	@include box-sizing(border-box);
+	background: white;
+	border-top:5px solid black;
+	@include center-app();
+	@include mq(s,max-width) {
+		&, & > * {
+
+		}
+	}
+
+}
+
+#brand { 
+	display:table-cell;
+	vertical-align:middle;
+	text-align: left;
+	padding-left:1.5%;
+	font-size: 1.25rem;
+	line-height: inherit;
+	font-weight:400;
+	font-family:'Gotham', 'Helvetica Neue', 'Lato', 'Arial', sans-serif;
+	text-transform:uppercase;
+	@include mq(s,max-width) {
+		width: 100%;
+		background-color: white;
+		line-height: 1;
+		text-align: center;
+	}
+}

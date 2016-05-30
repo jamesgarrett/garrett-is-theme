@@ -1,0 +1,8 @@
+// @mixin center-app($break:118.75rem,$dir:min-width){
+
+@mixin center-app($break:110rem,$dir:min-width){
+	@include mq($break,$dir) {
+		padding-left: $mxw-lr-offset;
+		padding-right: $mxw-lr-offset;
+	}
+}

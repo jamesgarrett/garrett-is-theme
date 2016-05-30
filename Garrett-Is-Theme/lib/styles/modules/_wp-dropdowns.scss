@@ -1,0 +1,40 @@
+.page_item_has_children {
+
+	position: relative;
+
+	&.current_page_ancestor {
+		background-color: transparent;
+		color: $ui-primary;
+		font-weight: bold;
+	}
+
+	.children {
+		display: none;
+		.page_item {
+			display: block;
+		}
+	}
+
+	&.current_page_ancestor,
+	&.current_page_item,
+	&:hover {
+		.children {
+			position: absolute;
+			top: 100%;
+			left: 0;
+
+			display: block;
+			width: 100%;
+
+			padding: 10px 0 0;
+			// padding: 1rem;
+
+			color: $ui-text;
+			text-align: center;
+			font-weight: normal;
+
+			// border: 1px solid $ui-primary;
+		}
+	}
+
+}

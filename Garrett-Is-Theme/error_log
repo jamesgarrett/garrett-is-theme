@@ -1,0 +1,4 @@
+[01-Mar-2016 03:01:15 America/Denver] PHP Fatal error:  Call to undefined function get_template_directory() in /home2/garreub7/public_html/garrett/wp-content/themes/Garrett-Is-Theme/lib/func/blade-conf.php on line 3
+[01-Mar-2016 04:27:11 America/Denver] PHP Fatal error:  Call to undefined function get_template_directory() in /home2/garreub7/public_html/garrett/wp-content/themes/Garrett-Is-Theme/lib/func/blade-conf.php on line 3
+[12-Mar-2016 20:09:07 America/Denver] PHP Fatal error:  Call to undefined function get_template_directory() in /home2/garreub7/public_html/garrett/wp-content/themes/Garrett-Is-Theme/lib/func/blade-conf.php on line 3
+[12-Mar-2016 20:36:16 America/Denver] PHP Fatal error:  Call to undefined function get_template_directory() in /home2/garreub7/public_html/garrett/wp-content/themes/Garrett-Is-Theme/lib/func/blade-conf.php on line 3

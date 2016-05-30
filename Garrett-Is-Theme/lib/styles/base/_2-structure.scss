@@ -1,0 +1,34 @@
+body{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display:table;
+    -webkit-overflow-scrolling: touch;
+}
+
+#app {
+    position: absolute;
+    left: 0;
+    display: table-row;
+    table-layout: fixed;
+    overflow-y: scroll;
+    overflow-x: scroll;
+    > * {
+        display: table-cell;}
+    top: 10vh;
+    bottom: 8vh;
+    width: 100%;
+    height: 82vh;
+    @include box-sizing(border-box);
+    @include center-app();
+    .app--col {
+        display: table-cell;
+        vertical-align: top;
+        // padding: nth($gutter,3) 0;
+        + .app--col {
+            padding-left: nth($gutter,3);
+        }
+    }
+}

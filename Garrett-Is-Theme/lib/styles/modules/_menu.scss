@@ -1,0 +1,47 @@
+
+.menu {
+	@extend .inline-list;
+	width: 100%;
+	height: 10vh;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	background-color: rgba(white,0.8);
+	@include mq(s,max-width){
+			-webkit-overflow-scrolling: touch;
+		}
+}
+.menu--item {
+	@extend %inline-list--item;
+	line-height: 1;
+	padding: 15px;
+}
+.menu ul {
+	font-family:'Gotham', 'Helvetica Neue', 'Lato', 'Arial', sans-serif;
+	text-transform: lowercase;
+	letter-spacing: .025rem;
+	font-size: 1.125rem;
+	display: table;
+	float: right;
+	width: 100%;
+	min-width: 400px;
+	@include box-sizing(border-box);
+	@include mq(s,max-width){
+		-webkit-overflow-scrolling: touch;
+		height: 45px;
+		overflow-y: hidden;
+		overflow-x: scroll;
+	}
+	 a {
+	display: inline-block;
+	width:inherit;
+		&:hover{
+			background: darkseagreen;
+			@include transition (background-color 0.5s ease-in-out);
+		}
+	}
+	li{
+		display: table-cell;
+		vertical-align: middle;
+	}
+}
