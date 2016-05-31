@@ -10,6 +10,9 @@
 <link rel="stylesheet" href="{{ get_stylesheet_directory_uri() }}/bower_components/bootstrap/dist/css/bootstrap.min.css">
 <link rel="stylesheet" href="{{ get_stylesheet_directory_uri() }}/bower_components/bootstrap/dist/css/bootstrapXL.css">
 
+<link rel="stylesheet" href="{{ get_stylesheet_directory_uri() }}/bower_components/unslider-master/dist/css/unslider.css">
+<link rel="stylesheet" href="{{ get_stylesheet_directory_uri() }}/bower_components/unslider-master/dist/css/unslider-dots.css">
+
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
 <meta name="abstract" content="Garrett.is/at_home">

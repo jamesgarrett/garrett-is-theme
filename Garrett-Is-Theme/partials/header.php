@@ -4,7 +4,6 @@
    $single_post = is_single($cur); 
    ?>
 
-
 <div class="menu">
 <div class="navbar navbar-default">
       <a class="navbar-brand topnav" href="http://garrett.is/"><icon class="g">G</icon><span class="hidden-xs garrettis">arrett.is</span></a>
@@ -16,19 +15,20 @@
 			@endif
 		<button id="menu-toggle"><i class="fa fa-bars" id="bars"></i></button>
      <menu id="menu-main" class="d-n">
-      	<ul id="accordion">
+      	<ul>
 			<li><span class="menu--item d-n"><a href="{{home_url()}}">Home</a></span></li>
 			<li><span class="menu--item d-n"><a href="{{home_url()}}/about">Archive</a></span></li>
-			<div class="dropdown">
-			  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
-			  <span class="caret"></span></button>
-			  <ul class="dropdown-menu">
-			    <li><a href="#">HTML</a></li>
-			    <li><a href="#">CSS</a></li>
-			    <li><a href="#">JavaScript</a></li>
-			  </ul>
-			</div>
+			<li><span class="menu--item d-n"><a href="#" id="button">Categories  <icon class="fa fa-caret-down"></icon></a></span></li>
+			  <div class="d-n" id="dropdown">
+			  	<li><span class="menu--item d-n"><a href="{{home_url()}}/Building">Building</a></span></li>
+				<li><span class="menu--item d-n"><a href="{{home_url()}}/Designing">Designing</a></span></li>
+				<li><span class="menu--item d-n"><a href="{{home_url()}}/Drawing">Drawing</a></span></li>
+				<li><span class="menu--item d-n"><a href="{{home_url()}}/Making">Making</a></span></li>
+				<li><span class="menu--item d-n"><a href="{{home_url()}}/Photographing">Photographing</a></span></li>
+				<li><span class="menu--item d-n"><a href="{{home_url()}}/Printing">Printing</a></span></li>
+			  </div>
 			<li><span class="menu--item d-n"><a href="{{home_url()}}/contact">Contact</a></span></li>
+
 		</ul>
 	</menu>
 </div>

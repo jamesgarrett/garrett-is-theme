@@ -6,11 +6,54 @@
 
 	<div class="grid" style="height:100vh;padding-bottom: 50px;overflow-y:scroll;">
 	<style>#app{overflow-x:hidden;}footer{display:none;}</style>
-      <div class="row">
+<!-- <div class="og-slider">
+    	<ul>
+    		<li class="slide"><img src="http://jamesgarrett.co/garrett/wp-content/uploads/2012/06/Magazine-Mockup.jpg" alt=""></li>
+    		<li class="slide"><img src="http://garrett.is/wp-content/uploads/2014/10/Overcast-I-Spring-2012.jpg" alt=""></li>
+    		<li class="slide"><img src="http://garrett.is/wp-content/uploads/2014/10/seed_pods.jpg" alt=""></li>
+    	</ul>
+    </div> -->
+<!--     <div class="row d-n">
         <div class="col-sm-8 feature-image" style=""></div>
-          <div class="col-sm-4 feature-description"><h2>Featured Project</h2><a href="/designing/infographics"><h2>DESIGNING INFOGRAPHICS</h2></a><p>Information design is a topic that greatly interests me. Through a combination of theory, pulling from the likes of Edward Tufte and Josef Albers, and practice through applications in silkscreen and web design. I have honed my  understanding of information design, which I apply to almost every project that I complete. I believe that excellent design not only has the power to present complex information in a manner that is aesthetically pleasing, but to elucidate the message, through intentional composition, emphasis, and tone.</p></div>
-          <div class="item-texture-image hidden-sm hidden-xs"></div>
-      </div>
+        <div class="col-sm-4 feature-description"><h2>Featured Project</h2><a href="/designing/infographics"><h2>DESIGNING INFOGRAPHICS</h2></a><p class="hidden-xs">Information design is a topic that greatly interests me. Through a combination of theory, pulling from the likes of Edward Tufte and Josef Albers, and practice through applications in silkscreen and web design. I have honed my  understanding of information design, which I apply to almost every project that I complete. I believe that excellent design not only has the power to present complex information in a manner that is aesthetically pleasing, but to elucidate the message, through intentional composition, emphasis, and tone.</p></div>
+        <div class="item-texture-image hidden-sm hidden-xs"></div>
+    </div>  -->
+	<div class="og-slider">
+	    <ul>
+	    	<li style="height:100vh;background-size:cover;background-image:url('http://jamesgarrett.co/garrett/wp-content/uploads/2012/06/Magazine-Mockup.jpg');">
+	    		<div class="col-sm-6 col-sm-offset-3 feature-description"><a href="/designing/infographics"><h2>DESIGNING / INFOGRAPHICS</h2></a><p>ILLUSTRATOR | PHOTOSHOP | GIS</p></div>
+		    </li>
+	    	<li style="height:100vh;background-size:cover;background-image:url('http://garrett.is/wp-content/uploads/2015/01/nightlandscape2.jpg');background-size: 200%;background-position: 5% 4.5%;">
+	    		<div class="col-sm-6 col-sm-offset-3 feature-description"><a href="/drawing/landscapes"><h2>DRAWING / LANDSCAPES</h2></a><p>GRAPHITE POWDER | PAPERBOARD</p></div>
+	    	</li>
+	    	<li style="height:100vh;background-size:cover;background-image:url('http://garrett.is/wp-content/uploads/2014/10/seed_pods.jpg');">
+		    	<div class="col-sm-6 col-sm-offset-3 feature-description"><a href="/photographing/seed_pods"><h2>PHOTOGRAPHING / FLORA</h2></a><p>F1.4 50MM DSLR | INKJET PRINT</p></div>
+	    	</li>
+	    </ul>
+	</div>
+	<style>
+		nav.unslider-nav {
+		    transform: translateY(-80px);
+		}
+		.og-slider{
+			transform: translateY(-50px);
+		}
+		.unslider-nav ol li {
+		    width: 1.5rem;
+		    height: 1.5rem;
+		}
+		.feature-description {
+		    height: auto;
+		    margin-top: 50vh;
+		    transform: translateY(-50%);
+		    padding: 13px;
+		    text-align: center;
+		    font-family: 'geogrotesque';
+		}
+		.feature-description h2{
+			margin:0;
+		}
+	</style>
       <div class="row project-thumbs">
       	<h2>Ongoing Projects</h2><hr>
       </div>
@@ -63,28 +106,5 @@
 		{{ wp_list_categories( $menu ); }}
 		</ul>
 	</div>
-
-<!-- 	
-
-	<div class="row project-thumbs">
-	     <h2>Tags</h2><hr>
-          </div>
-          <div class="row">
-            <div class="col-md-2 col-md-offset-3 tag"><a href="#">Posters</a></div>
-            <div class="col-md-2 tag"><a href="#">Recursive Functions</a></div>      
-            <div class="col-md-2 tag"><a href="#">Paris</a></div>
-          </div>
-          <div class="row">
-            <div class="col-md-2 col-md-offset-2 tag"><a href="#">Vectors</a></div>
-            <div class="col-md-2 tag"><a href="#">Landscapes</a></div>      
-            <div class="col-md-2 tag"><a href="#">Infographics</a></div>
-            <div class="col-md-2 tag"><a href="#">Pier 96</a></div>
-          </div>
-          <div class="row">
-            <div class="col-md-2 col-md-offset-3 tag"><a href="#">Union Square</a></div>
-            <div class="col-md-2 tag"><a href="#">Semantics Servers</a></div>      
-            <div class="col-md-2 tag"><a href="#">More...</a></div>
-          </div>
-	</div> -->
 
 @endsection

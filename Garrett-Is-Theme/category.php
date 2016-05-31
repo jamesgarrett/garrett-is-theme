@@ -58,7 +58,6 @@
 								?>
 							</div>
 						</div> 
-						<hr>
 						<div class="clear"></div>
 
 					

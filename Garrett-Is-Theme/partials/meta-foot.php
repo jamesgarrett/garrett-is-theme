@@ -4,8 +4,18 @@
 	<script src="{{ get_stylesheet_directory_uri() }}/bower_components/jquery/dist/jquery.min.js"></script>
 	<script src="{{ get_stylesheet_directory_uri() }}/lib/scripts/garrett-toggle.js"></script>
 	<script src="{{ get_stylesheet_directory_uri() }}/lib/scripts/menu-toggle.js"></script>
+	<script src="{{ get_stylesheet_directory_uri() }}/lib/scripts/slider.js"></script>
 	<script src="{{ get_stylesheet_directory_uri() }}/lib/scripts/modules/drag-scroll.js"></script>
 	<script src="{{ get_stylesheet_directory_uri() }}/bower_components/jquery/dist/jquery-ui.min.js"></script>
+	<script src="{{ get_stylesheet_directory_uri() }}/bower_components/unslider-master/dist/js/unslider-min.js"></script> 
+	<script>$(function() { $('.banner').unslider() })</script>
+	  <script>
+		  $(function() {
+		    $( "#button" ).click(function() {
+		      $( "#dropdown" ).toggleClass( "d-n", 10 );
+		    });
+		  });
+		  </script>
 
 	<script>
 
